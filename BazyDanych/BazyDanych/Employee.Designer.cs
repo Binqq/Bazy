@@ -1,6 +1,6 @@
 ﻿namespace BazyDanych
 {
-    partial class FormBank
+    partial class Employee
     {
         /// <summary>
         /// Required designer variable.
@@ -28,34 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonLogOut = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // buttonLogOut
-            // 
-            this.buttonLogOut.Location = new System.Drawing.Point(348, 407);
-            this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(179, 46);
-            this.buttonLogOut.TabIndex = 0;
-            this.buttonLogOut.Text = "Wyloguj";
-            this.buttonLogOut.UseVisualStyleBackColor = true;
-            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
-            // 
-            // FormBank
+            // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(539, 465);
-            this.Controls.Add(this.buttonLogOut);
-            this.Name = "FormBank";
-            this.Text = "Bank";
-            this.Load += new System.EventHandler(this.FormBank_Load);
+            this.ClientSize = new System.Drawing.Size(497, 391);
+            this.Name = "Employee";
+            this.Text = "Employee";
+            this.Load += new System.EventHandler(this.Employee_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button buttonLogOut;
     }
 }

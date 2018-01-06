@@ -33,6 +33,7 @@
             this.labelLogin = new System.Windows.Forms.Label();
             this.labelPassword = new System.Windows.Forms.Label();
             this.buttonLogIn = new System.Windows.Forms.Button();
+            this.checkBoxEmployees = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // textBoxLogin
@@ -80,19 +81,30 @@
             this.buttonLogIn.UseVisualStyleBackColor = true;
             this.buttonLogIn.Click += new System.EventHandler(this.buttonLogIn_Click);
             // 
+            // checkBoxEmployees
+            // 
+            this.checkBoxEmployees.AutoSize = true;
+            this.checkBoxEmployees.Location = new System.Drawing.Point(25, 198);
+            this.checkBoxEmployees.Name = "checkBoxEmployees";
+            this.checkBoxEmployees.Size = new System.Drawing.Size(94, 21);
+            this.checkBoxEmployees.TabIndex = 5;
+            this.checkBoxEmployees.Text = "Pracownik";
+            this.checkBoxEmployees.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(349, 253);
+            this.Controls.Add(this.checkBoxEmployees);
             this.Controls.Add(this.buttonLogIn);
             this.Controls.Add(this.labelPassword);
             this.Controls.Add(this.labelLogin);
             this.Controls.Add(this.textBoxPassword);
             this.Controls.Add(this.textBoxLogin);
             this.Name = "Form1";
-            this.Text = "Bank Wróble&Bojzan SA";
+            this.Text = "Bank Wróbel&Bojzan SA";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -105,6 +117,7 @@
         private System.Windows.Forms.Label labelLogin;
         private System.Windows.Forms.Label labelPassword;
         private System.Windows.Forms.Button buttonLogIn;
+        private System.Windows.Forms.CheckBox checkBoxEmployees;
     }
 }
 

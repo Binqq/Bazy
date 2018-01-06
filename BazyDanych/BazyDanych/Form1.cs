@@ -44,36 +44,78 @@ namespace BazyDanych
             login = textBoxLogin.Text;
             password = textBoxPassword.Text;
             string connetionString = null;
-
-            MySqlConnection cnn;
-            connetionString = "server=localhost;database=bank;uid=root;pwd=Bd123456789#";
-            cnn = new MySqlConnection(connetionString);
-            cnn.Open();
+        
+        
+                MySqlConnection cnn;
+                connetionString = "server=localhost;database=bank;uid=root;pwd=Bd123456789#";
+                cnn = new MySqlConnection(connetionString);
             try
             {
-
-                string query = "SELECT Login, Passwords FROM customers WHERE Login Like " + login + " AND Passwords LIKE '" + password + "'";
-                MySqlDataAdapter rdr = new MySqlDataAdapter(query, cnn);
-                rdr.SelectCommand = new MySqlCommand(query, cnn);
-                DataSet data = new DataSet();
-                rdr.Fill(data);
-                if (data != null)
+                cnn.Open();
+            }catch
+            {
+                MessageBox.Show("Spróbuj później", "Error");
+            }
+            try
+            {
+                string query;
+                if (checkBoxEmployees.Checked)
                 {
-                    MessageBox.Show("Zalogowano poprawnie");
+                    query = "SELECT Login FROM employees WHERE Login Like '" + login + "' AND Passwords LIKE '" + password + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, cnn);
+                    MySqlDataReader rdr = null;
+                    rdr = cmd.ExecuteReader();
 
-                    (new FormBank()).ShowDialog();
+                    if (rdr.Read())
+                    {
+                        if (rdr.Read() == false)
+                        {
+                            MessageBox.Show("Zalogowano poprawnie");
+                            string loginTmp = rdr.GetString(0);
+                            (new Employee(cnn, loginTmp)).ShowDialog();
+                        }
+
+
+                    }
+                    else
+                        MessageBox.Show("Błędne hasło lub login", "Error");
 
 
 
+                    cnn.Close();
+                } else
+                {
+                    query = "SELECT Login FROM customers WHERE Login Like '" + login + "' AND Passwords LIKE '" + password + "'";
+                    MySqlCommand cmd = new MySqlCommand(query, cnn);
+                    MySqlDataReader rdr = null;
+                    rdr = cmd.ExecuteReader();
+
+                    if (rdr.Read())
+                    {
+                        if (rdr.Read() == false)
+                        {
+                            MessageBox.Show("Zalogowano poprawnie");
+                            string loginTmp = rdr.GetString(0);
+                            (new FormBank(cnn, loginTmp)).ShowDialog();
+                        }
+
+
+                    }
+                    else
+                        MessageBox.Show("Błędne hasło lub login", "Error");
+
+
+
+                    cnn.Close();
                 }
 
-                cnn.Close();
-            }
-            catch (Exception ex)
+               
+            }catch(Exception exs)
             {
 
             }
-        }
+            
+            }
     }
 }
 

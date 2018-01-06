@@ -11,3 +11,4 @@ C:\Users\m-mic\Documents\Visual Studio 2017\Projects\BazyDanych\BazyDanych\obj\D
 C:\Users\m-mic\Documents\Visual Studio 2017\Projects\BazyDanych\BazyDanych\obj\Debug\BazyDanych.csproj.CoreCompileInputs.cache
 C:\Users\m-mic\Documents\Visual Studio 2017\Projects\BazyDanych\BazyDanych\obj\Debug\BazyDanych.exe
 C:\Users\m-mic\Documents\Visual Studio 2017\Projects\BazyDanych\BazyDanych\obj\Debug\BazyDanych.pdb
+C:\Users\m-mic\Documents\Visual Studio 2017\Projects\BazyDanych\BazyDanych\obj\Debug\BazyDanych.Employee.resources
