@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.buttonBack = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxSurname = new System.Windows.Forms.TextBox();
+            this.textBoxCustomerId = new System.Windows.Forms.TextBox();
+            this.labelName = new System.Windows.Forms.Label();
+            this.labelSurname = new System.Windows.Forms.Label();
+            this.labelCustomerId = new System.Windows.Forms.Label();
             this.buttonDelAccount = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -48,53 +48,53 @@
             this.buttonBack.UseVisualStyleBackColor = true;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 24);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 22);
-            this.textBox1.TabIndex = 1;
+            this.textBoxName.Location = new System.Drawing.Point(12, 24);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(120, 22);
+            this.textBoxName.TabIndex = 1;
             // 
-            // textBox2
+            // textBoxSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 77);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(120, 22);
-            this.textBox2.TabIndex = 2;
+            this.textBoxSurname.Location = new System.Drawing.Point(12, 77);
+            this.textBoxSurname.Name = "textBoxSurname";
+            this.textBoxSurname.Size = new System.Drawing.Size(120, 22);
+            this.textBoxSurname.TabIndex = 2;
             // 
-            // textBox3
+            // textBoxCustomerId
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 122);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(120, 22);
-            this.textBox3.TabIndex = 3;
+            this.textBoxCustomerId.Location = new System.Drawing.Point(12, 122);
+            this.textBoxCustomerId.Name = "textBoxCustomerId";
+            this.textBoxCustomerId.Size = new System.Drawing.Size(120, 22);
+            this.textBoxCustomerId.TabIndex = 3;
             // 
-            // label1
+            // labelName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(170, 29);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "label1";
+            this.labelName.AutoSize = true;
+            this.labelName.Location = new System.Drawing.Point(170, 29);
+            this.labelName.Name = "labelName";
+            this.labelName.Size = new System.Drawing.Size(33, 17);
+            this.labelName.TabIndex = 4;
+            this.labelName.Text = "Imie";
             // 
-            // label2
+            // labelSurname
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(170, 77);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "label2";
+            this.labelSurname.AutoSize = true;
+            this.labelSurname.Location = new System.Drawing.Point(170, 77);
+            this.labelSurname.Name = "labelSurname";
+            this.labelSurname.Size = new System.Drawing.Size(67, 17);
+            this.labelSurname.TabIndex = 5;
+            this.labelSurname.Text = "Nazwisko";
             // 
-            // label3
+            // labelCustomerId
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(170, 125);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "label3";
+            this.labelCustomerId.AutoSize = true;
+            this.labelCustomerId.Location = new System.Drawing.Point(170, 125);
+            this.labelCustomerId.Name = "labelCustomerId";
+            this.labelCustomerId.Size = new System.Drawing.Size(52, 17);
+            this.labelCustomerId.TabIndex = 6;
+            this.labelCustomerId.Text = "PESEL";
             // 
             // buttonDelAccount
             // 
@@ -104,6 +104,7 @@
             this.buttonDelAccount.TabIndex = 7;
             this.buttonDelAccount.Text = "Usuń konto";
             this.buttonDelAccount.UseVisualStyleBackColor = true;
+            this.buttonDelAccount.Click += new System.EventHandler(this.buttonDelAccount_Click);
             // 
             // DelConto
             // 
@@ -111,12 +112,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(462, 230);
             this.Controls.Add(this.buttonDelAccount);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.labelCustomerId);
+            this.Controls.Add(this.labelSurname);
+            this.Controls.Add(this.labelName);
+            this.Controls.Add(this.textBoxCustomerId);
+            this.Controls.Add(this.textBoxSurname);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.buttonBack);
             this.Name = "DelConto";
             this.Text = "DelConto";
@@ -128,12 +129,12 @@
         #endregion
 
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxSurname;
+        private System.Windows.Forms.TextBox textBoxCustomerId;
+        private System.Windows.Forms.Label labelName;
+        private System.Windows.Forms.Label labelSurname;
+        private System.Windows.Forms.Label labelCustomerId;
         private System.Windows.Forms.Button buttonDelAccount;
     }
 }

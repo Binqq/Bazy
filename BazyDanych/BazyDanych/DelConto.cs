@@ -27,5 +27,10 @@ namespace BazyDanych
             this.Close();
 
         }
-}
+
+        private void buttonDelAccount_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
