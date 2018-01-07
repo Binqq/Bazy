@@ -1,6 +1,6 @@
 ﻿namespace BazyDanych
 {
-    partial class FormBank
+    partial class DelConto
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.buttonLogOut = new System.Windows.Forms.Button();
+            this.buttonBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // buttonLogOut
+            // buttonBack
             // 
-            this.buttonLogOut.Location = new System.Drawing.Point(286, 206);
-            this.buttonLogOut.Name = "buttonLogOut";
-            this.buttonLogOut.Size = new System.Drawing.Size(75, 23);
-            this.buttonLogOut.TabIndex = 0;
-            this.buttonLogOut.Text = "button1";
-            this.buttonLogOut.UseVisualStyleBackColor = true;
-            this.buttonLogOut.Click += new System.EventHandler(this.buttonLogOut_Click);
+            this.buttonBack.Location = new System.Drawing.Point(407, 219);
+            this.buttonBack.Name = "buttonBack";
+            this.buttonBack.Size = new System.Drawing.Size(75, 23);
+            this.buttonBack.TabIndex = 0;
+            this.buttonBack.Text = "Wróć";
+            this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // FormBank
+            // DelConto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(395, 253);
-            this.Controls.Add(this.buttonLogOut);
-            this.Name = "FormBank";
-            this.Text = "Klient";
+            this.ClientSize = new System.Drawing.Size(511, 280);
+            this.Controls.Add(this.buttonBack);
+            this.Name = "DelConto";
+            this.Text = "DelConto";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Button buttonLogOut;
+        private System.Windows.Forms.Button buttonBack;
     }
 }

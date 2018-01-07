@@ -12,3 +12,19 @@ C:\Users\m-mic\Documents\Visual Studio 2017\Projects\BazyDanych\BazyDanych\obj\D
 C:\Users\m-mic\Documents\Visual Studio 2017\Projects\BazyDanych\BazyDanych\obj\Debug\BazyDanych.exe
 C:\Users\m-mic\Documents\Visual Studio 2017\Projects\BazyDanych\BazyDanych\obj\Debug\BazyDanych.pdb
 C:\Users\m-mic\Documents\Visual Studio 2017\Projects\BazyDanych\BazyDanych\obj\Debug\BazyDanych.Employee.resources
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.csprojResolveAssemblyReference.cache
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.Credit.resources
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.Employee.resources
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.Form1.resources
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.Properties.Resources.resources
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.csproj.GenerateResource.Cache
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.csproj.CoreCompileInputs.cache
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\bin\Debug\BazyDanych.exe.config
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\bin\Debug\BazyDanych.exe
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\bin\Debug\BazyDanych.pdb
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\bin\Debug\MySql.Data.dll
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\bin\Debug\MySql.Data.xml
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.exe
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.pdb
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.FormBank.resources
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.DelConto.resources

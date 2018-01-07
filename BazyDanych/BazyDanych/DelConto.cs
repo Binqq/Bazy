@@ -10,25 +10,22 @@ using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 namespace BazyDanych
 {
-    public partial class FormBank : Form
+    public partial class DelConto : Form
     {
         string data;
         MySqlConnection cnn;
-        public FormBank(MySqlConnection connect, string data)
+        public DelConto(MySqlConnection connection, string data)
         {
-            this.cnn = connect;
+            cnn = connection;
             this.data = data;
             InitializeComponent();
         }
 
-        private void buttonLogOut_Click(object sender, EventArgs e)
+        private void buttonBack_Click(object sender, EventArgs e)
         {
-           
-                data = null;
-                cnn.Close();
-                this.Close();
-            
+
+            this.Close();
 
         }
-    }
+}
 }

@@ -72,7 +72,10 @@ namespace BazyDanych
                         {
                             MessageBox.Show("Zalogowano poprawnie");
                             string loginTmp = rdr.GetString(0);
+                            this.Visible = false;
                             (new Employee(cnn, loginTmp)).ShowDialog();
+                            this.Visible = true;
+                           
                         }
 
 
@@ -96,7 +99,9 @@ namespace BazyDanych
                         {
                             MessageBox.Show("Zalogowano poprawnie");
                             string loginTmp = rdr.GetString(0);
+                            this.Visible = false;
                             (new FormBank(cnn, loginTmp)).ShowDialog();
+                            this.Visible = true;
                         }
 
 
