@@ -45,6 +45,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
             this.checkBoxCompanyAccount = new System.Windows.Forms.CheckBox();
+            this.textBoxBranch = new System.Windows.Forms.TextBox();
+            this.labelBranch = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelName
@@ -93,14 +95,14 @@
             // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(299, 27);
+            this.textBox6.Location = new System.Drawing.Point(30, 265);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(100, 22);
             this.textBox6.TabIndex = 6;
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(299, 64);
+            this.textBox7.Location = new System.Drawing.Point(30, 319);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(100, 22);
             this.textBox7.TabIndex = 7;
@@ -144,7 +146,7 @@
             // labelPassword
             // 
             this.labelPassword.AutoSize = true;
-            this.labelPassword.Location = new System.Drawing.Point(443, 27);
+            this.labelPassword.Location = new System.Drawing.Point(162, 268);
             this.labelPassword.Name = "labelPassword";
             this.labelPassword.Size = new System.Drawing.Size(44, 17);
             this.labelPassword.TabIndex = 12;
@@ -153,7 +155,7 @@
             // labelPass
             // 
             this.labelPass.AutoSize = true;
-            this.labelPass.Location = new System.Drawing.Point(443, 67);
+            this.labelPass.Location = new System.Drawing.Point(162, 322);
             this.labelPass.Name = "labelPass";
             this.labelPass.Size = new System.Drawing.Size(43, 17);
             this.labelPass.TabIndex = 13;
@@ -161,7 +163,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(299, 143);
+            this.button1.Location = new System.Drawing.Point(409, 335);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 70);
             this.button1.TabIndex = 14;
@@ -171,7 +173,7 @@
             // 
             // buttonBack
             // 
-            this.buttonBack.Location = new System.Drawing.Point(439, 234);
+            this.buttonBack.Location = new System.Drawing.Point(30, 382);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 15;
@@ -181,18 +183,36 @@
             // checkBoxCompanyAccount
             // 
             this.checkBoxCompanyAccount.AutoSize = true;
-            this.checkBoxCompanyAccount.Location = new System.Drawing.Point(301, 115);
+            this.checkBoxCompanyAccount.Location = new System.Drawing.Point(409, 297);
             this.checkBoxCompanyAccount.Name = "checkBoxCompanyAccount";
             this.checkBoxCompanyAccount.Size = new System.Drawing.Size(119, 21);
             this.checkBoxCompanyAccount.TabIndex = 16;
             this.checkBoxCompanyAccount.Text = "Konto firmowe";
             this.checkBoxCompanyAccount.UseVisualStyleBackColor = true;
             // 
+            // textBoxBranch
+            // 
+            this.textBoxBranch.Location = new System.Drawing.Point(302, 22);
+            this.textBoxBranch.Name = "textBoxBranch";
+            this.textBoxBranch.Size = new System.Drawing.Size(100, 22);
+            this.textBoxBranch.TabIndex = 17;
+            // 
+            // labelBranch
+            // 
+            this.labelBranch.AutoSize = true;
+            this.labelBranch.Location = new System.Drawing.Point(451, 25);
+            this.labelBranch.Name = "labelBranch";
+            this.labelBranch.Size = new System.Drawing.Size(56, 17);
+            this.labelBranch.TabIndex = 19;
+            this.labelBranch.Text = "Oddział";
+            // 
             // CreateCont
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 269);
+            this.ClientSize = new System.Drawing.Size(541, 417);
+            this.Controls.Add(this.labelBranch);
+            this.Controls.Add(this.textBoxBranch);
             this.Controls.Add(this.checkBoxCompanyAccount);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.button1);
@@ -236,5 +256,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonBack;
         private System.Windows.Forms.CheckBox checkBoxCompanyAccount;
+        private System.Windows.Forms.TextBox textBoxBranch;
+        private System.Windows.Forms.Label labelBranch;
     }
 }
