@@ -28,3 +28,6 @@ C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.
 C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.pdb
 C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.FormBank.resources
 C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.DelConto.resources
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.CreateCont.resources
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.Pay_in_out.resources
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.Transf.resources

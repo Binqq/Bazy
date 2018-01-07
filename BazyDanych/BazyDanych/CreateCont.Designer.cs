@@ -179,6 +179,7 @@
             this.buttonBack.TabIndex = 15;
             this.buttonBack.Text = "Cofnij";
             this.buttonBack.UseVisualStyleBackColor = true;
+            this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
             // checkBoxCompanyAccount
             // 

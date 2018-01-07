@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.buttonBack = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
             this.labelName = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBoxSurname = new System.Windows.Forms.TextBox();
             this.labelSurname = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxPesel = new System.Windows.Forms.TextBox();
             this.labelPesel = new System.Windows.Forms.Label();
             this.textBoxDuration = new System.Windows.Forms.TextBox();
             this.textBoxCash = new System.Windows.Forms.TextBox();
@@ -52,12 +52,12 @@
             this.buttonBack.UseVisualStyleBackColor = true;
             this.buttonBack.Click += new System.EventHandler(this.buttonLogOut_Click);
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 27);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 1;
+            this.textBoxName.Location = new System.Drawing.Point(12, 27);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(100, 22);
+            this.textBoxName.TabIndex = 1;
             // 
             // labelName
             // 
@@ -68,12 +68,12 @@
             this.labelName.TabIndex = 2;
             this.labelName.Text = "Imie klienta";
             // 
-            // textBox2
+            // textBoxSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 66);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 3;
+            this.textBoxSurname.Location = new System.Drawing.Point(12, 66);
+            this.textBoxSurname.Name = "textBoxSurname";
+            this.textBoxSurname.Size = new System.Drawing.Size(100, 22);
+            this.textBoxSurname.TabIndex = 3;
             // 
             // labelSurname
             // 
@@ -84,12 +84,12 @@
             this.labelSurname.TabIndex = 4;
             this.labelSurname.Text = "Nazwisko klienta";
             // 
-            // textBox3
+            // textBoxPesel
             // 
-            this.textBox3.Location = new System.Drawing.Point(12, 105);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 5;
+            this.textBoxPesel.Location = new System.Drawing.Point(12, 105);
+            this.textBoxPesel.Name = "textBoxPesel";
+            this.textBoxPesel.Size = new System.Drawing.Size(100, 22);
+            this.textBoxPesel.TabIndex = 5;
             // 
             // labelPesel
             // 
@@ -113,6 +113,7 @@
             this.textBoxCash.Name = "textBoxCash";
             this.textBoxCash.Size = new System.Drawing.Size(100, 22);
             this.textBoxCash.TabIndex = 8;
+
             // 
             // labelCash
             // 
@@ -140,6 +141,7 @@
             this.buttonGrantALoan.TabIndex = 11;
             this.buttonGrantALoan.Text = "Udziel kredytu";
             this.buttonGrantALoan.UseVisualStyleBackColor = true;
+            this.buttonGrantALoan.Click += new System.EventHandler(this.buttonGrantALoan_Click);
             // 
             // Credit
             // 
@@ -152,11 +154,11 @@
             this.Controls.Add(this.textBoxCash);
             this.Controls.Add(this.textBoxDuration);
             this.Controls.Add(this.labelPesel);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxPesel);
             this.Controls.Add(this.labelSurname);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.textBoxSurname);
             this.Controls.Add(this.labelName);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.buttonBack);
             this.Name = "Credit";
             this.Text = "Credit";
@@ -168,11 +170,11 @@
         #endregion
 
         private System.Windows.Forms.Button buttonBack;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxName;
         private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox textBoxSurname;
         private System.Windows.Forms.Label labelSurname;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxPesel;
         private System.Windows.Forms.Label labelPesel;
         private System.Windows.Forms.TextBox textBoxDuration;
         private System.Windows.Forms.TextBox textBoxCash;
