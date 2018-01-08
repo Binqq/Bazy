@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClientTransfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClientTransfer.Designer.cs">
+      <DependentUpon>ClientTransfer.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateCont.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -97,6 +103,9 @@
     <Compile Include="Transf.Designer.cs">
       <DependentUpon>Transf.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ClientTransfer.resx">
+      <DependentUpon>ClientTransfer.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateCont.resx">
       <DependentUpon>CreateCont.cs</DependentUpon>
     </EmbeddedResource>

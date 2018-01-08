@@ -32,6 +32,7 @@
             this.buttonBalance = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.buttonHistory = new System.Windows.Forms.Button();
+            this.buttonTransfer = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,11 +75,22 @@
             this.buttonHistory.UseVisualStyleBackColor = true;
             this.buttonHistory.Click += new System.EventHandler(this.buttonHistory_Click);
             // 
+            // buttonTransfer
+            // 
+            this.buttonTransfer.Location = new System.Drawing.Point(356, 35);
+            this.buttonTransfer.Name = "buttonTransfer";
+            this.buttonTransfer.Size = new System.Drawing.Size(134, 60);
+            this.buttonTransfer.TabIndex = 4;
+            this.buttonTransfer.Text = "Przelew";
+            this.buttonTransfer.UseVisualStyleBackColor = true;
+            this.buttonTransfer.Click += new System.EventHandler(this.buttonTransfer_Click);
+            // 
             // FormBank
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 451);
+            this.Controls.Add(this.buttonTransfer);
             this.Controls.Add(this.buttonHistory);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.buttonBalance);
@@ -96,5 +108,6 @@
         private System.Windows.Forms.Button buttonBalance;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button buttonHistory;
+        private System.Windows.Forms.Button buttonTransfer;
     }
 }

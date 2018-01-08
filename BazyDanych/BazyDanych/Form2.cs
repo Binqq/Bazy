@@ -60,5 +60,10 @@ namespace BazyDanych
                 dataGridView1.DataSource = dt.DefaultView;
             }
         }
+
+        private void buttonTransfer_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

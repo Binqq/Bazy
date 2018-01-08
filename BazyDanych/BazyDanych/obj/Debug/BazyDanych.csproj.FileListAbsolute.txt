@@ -31,3 +31,4 @@ C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.
 C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.CreateCont.resources
 C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.Pay_in_out.resources
 C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.Transf.resources
+C:\Users\m-mic\Documents\GitHub\Bazy\BazyDanych\BazyDanych\obj\Debug\BazyDanych.ClientTransfer.resources
