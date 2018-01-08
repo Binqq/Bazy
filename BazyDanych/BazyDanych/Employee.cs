@@ -76,5 +76,10 @@ namespace BazyDanych
             cnn.Close();
             this.Close();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            new Pay_in_out(cnn, data).ShowDialog();
+        }
     }
 }

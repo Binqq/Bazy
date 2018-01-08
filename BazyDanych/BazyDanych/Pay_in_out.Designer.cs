@@ -112,6 +112,7 @@
             this.buttonPayOut.TabIndex = 8;
             this.buttonPayOut.Text = "Wypłata";
             this.buttonPayOut.UseVisualStyleBackColor = true;
+            this.buttonPayOut.Click += new System.EventHandler(this.buttonPayOut_Click);
             // 
             // buttonPayIn
             // 
@@ -121,6 +122,7 @@
             this.buttonPayIn.TabIndex = 9;
             this.buttonPayIn.Text = "Wpłata";
             this.buttonPayIn.UseVisualStyleBackColor = true;
+            this.buttonPayIn.Click += new System.EventHandler(this.buttonPayIn_Click);
             // 
             // Pay_in_out
             // 
