@@ -62,9 +62,9 @@ namespace BazyDanych
             rdr1 = cmd1.ExecuteReader();
             cnn1.Close();
 
-            string query2;
-            //TODO Zmienić na tak jak wyżej 
-            query2 = "INSERT INTO accounts VALUES('" + null + "','" + Branch + "','" + 1 + "','" + 0 + "','" + null + "','" + null + "','" + null + "')";
+            string query2;    
+            //TODO zmienić datę
+            query2 = "INSERT INTO accounts (Branch_id,Customer_id,Account_Type_id) VALUES('" + Branch + "','" + 1 + "','" + 0 + "')";
             MySqlCommand cmd2 = new MySqlCommand(query2, cnn1);
             MySqlDataReader rdr2 = null;
             cnn1.Open();

@@ -34,6 +34,7 @@ namespace BazyDanych
 
         private void buttonCredit_Click(object sender, EventArgs e)
         {
+            cnn.Close();
             new Credit(cnn,data).ShowDialog();
         }
 
@@ -49,7 +50,7 @@ namespace BazyDanych
 
         private void buttonTransfer_Click(object sender, EventArgs e)
         {
-
+            new Transf(cnn, data).ShowDialog();
         }
 
         private void buttonPay_In_Out_Click(object sender, EventArgs e)

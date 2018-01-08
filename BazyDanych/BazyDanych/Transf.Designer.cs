@@ -139,6 +139,7 @@
             this.buttonTransfer.TabIndex = 11;
             this.buttonTransfer.Text = "wykonaj przelew";
             this.buttonTransfer.UseVisualStyleBackColor = true;
+            this.buttonTransfer.Click += new System.EventHandler(this.buttonTransfer_Click);
             // 
             // Transf
             // 

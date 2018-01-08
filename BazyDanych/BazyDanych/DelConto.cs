@@ -35,7 +35,12 @@ namespace BazyDanych
             Name = textBoxName.Text;
             Surname = textBoxSurname.Text;
             PESEL = Convert.ToDouble(textBoxCustomerId.Text);
-            query = "DELETE FROM accounts WHERE Account_id=`" + PESEL + "`";
+            query = "DELETE FROM accounts WHERE Account_id='" + PESEL + "'";
+            MySqlCommand command = new MySqlCommand(query, cnn);
+            MySqlDataReader rdr = null;
+            cnn.Open();
+            rdr = command.ExecuteReader();
+            cnn.Close();
         }
     }
 }

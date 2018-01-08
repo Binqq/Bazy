@@ -14,14 +14,17 @@ namespace BazyDanych
     {
         string data;
         MySqlConnection cnn;
+        string connetionString1 = "server=localhost;database=bank;uid=root;pwd=Bd123456789#";
         public Credit(MySqlConnection connection, string data)
         {
+            this.data = data;
+            cnn = connection;
             InitializeComponent();
         }
 
         private void buttonLogOut_Click(object sender, EventArgs e)
         {
-            
+           
             this.Close();
         }
 
@@ -40,34 +43,65 @@ namespace BazyDanych
             DateTime date1 = DateTime.Today;
 
             string query1, query2, query3,query,que;
-            query = "SELECT Account_id FROM accounts JOIN customers ON Customer_id = Customers_id AND Login LIKE '"+data+"`";
+            query = "SELECT Account_id FROM accounts JOIN customers ON accounts.Customer_id = customers.Customers_id AND Customer_id = '"+PESEL+"'";
+            cnn.Open();
             MySqlCommand cmd = new MySqlCommand(query, cnn);
             MySqlDataReader rdr = null;
+           
             rdr = cmd.ExecuteReader();
-            int accountID = rdr.GetInt16(0);
-
-
-            query3 = "SELECT Employees_id FROM employees WHERE Login=`" + data + "`";
+            int accountID;
+            if (rdr.Read())
+                accountID = rdr.GetInt16(0);
+            else
+            {
+                accountID = 0;
+                MessageBox.Show("Brak numeru konta");
+                    
+                    }
+            cnn.Close();
+            query3 = "SELECT Employees_id FROM employees WHERE Login='" + data + "'";
+            cnn.Open();
             MySqlCommand cmd1 = new MySqlCommand(query3, cnn);
             MySqlDataReader rdr1 = null;
             rdr1 = cmd1.ExecuteReader();
-            int employeeID = rdr.GetInt16(0);
-
-            query1 ="INSERT INTO loans VALUES(`"+null+"',`"+Month+"`,`"+Rate+"`,`"+date1+"`,`"+ accountID+ "`)";
+            int employeeID;
+            if (rdr1.Read())
+                employeeID = rdr1.GetInt16(0);
+            else
+            {
+                employeeID = 0;
+                MessageBox.Show("Brak numeru konta");
+            }
+            cnn.Close();
+            query1 ="INSERT INTO loans (DurationByMonth,Interest_rate,Start_Date,Account_id) VALUES('"+Month+"','"+Rate+"','"+date1+"','"+ accountID+ "')";         
             MySqlCommand command = new MySqlCommand(query1, cnn);
-            command.ExecuteNonQuery();
-
-            que = "SELECT Loan_id FROM loans WHERE Login=`" + accountID + "`";
-            MySqlCommand cmd2 = new MySqlCommand(que, cnn);
             MySqlDataReader rdr2 = null;
-            rdr2 = cmd1.ExecuteReader();
-            int loanID = rdr.GetInt16(0);
+            cnn.Open();
+            rdr2 = command.ExecuteReader();
+            cnn.Close();
 
+            que = "SELECT Loan_id FROM loans WHERE Login='" + accountID + "'";
+            cnn.Open();
+            MySqlCommand cmd2 = new MySqlCommand(que, cnn);
+            MySqlDataReader rdr3 = null;
+            rdr3 = cmd2.ExecuteReader();
+            int loanID;
+            if(rdr3.Read())
+                loanID= rdr3.GetInt16(0);
+            else
+            {
+               loanID = 0;
+                MessageBox.Show("Brak kredytu");
+            }
+            cnn.Close();
 
-            query2 ="INSERT INTO  transaction VALUES(`"+null+"`,`"+date1+"`,`"+accountID+"`,`4`,`"+employeeID+"`,`"+loanID+"`)" ;
+            query2 ="INSERT INTO  transaction (Data_Type,Account_id,Transaction_Type_id,Employee_id,Loan_ID) VALUES('"+date1+"','"+accountID+"','4','"+employeeID+"','"+loanID+"')" ;
             MySqlCommand command1 = new MySqlCommand(query2, cnn);
-            command1.ExecuteNonQuery();
-
+            MySqlDataReader rdr4= null;
+            cnn.Open();
+         
+            rdr4= command1.ExecuteReader();
+            cnn.Close();
         }
 
     
