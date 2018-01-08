@@ -39,7 +39,7 @@ namespace BazyDanych
 
         private void buttonNewConto_Click(object sender, EventArgs e)
         {
-
+            new CreateCont(cnn, data).ShowDialog();
         }
 
         private void buttonCloseConto_Click(object sender, EventArgs e)

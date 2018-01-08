@@ -30,7 +30,12 @@ namespace BazyDanych
 
         private void buttonDelAccount_Click(object sender, EventArgs e)
         {
-
+            string Name, Surname,query;
+            double PESEL;
+            Name = textBoxName.Text;
+            Surname = textBoxSurname.Text;
+            PESEL = Convert.ToDouble(textBoxCustomerId.Text);
+            query = "DELETE FROM accounts WHERE Account_id=`" + PESEL + "`";
         }
     }
 }

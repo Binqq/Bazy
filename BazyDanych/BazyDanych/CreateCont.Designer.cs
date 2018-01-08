@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.labelName = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBoxName = new System.Windows.Forms.TextBox();
+            this.textBoxSurname = new System.Windows.Forms.TextBox();
+            this.textBoxAddress = new System.Windows.Forms.TextBox();
+            this.textBoxTel = new System.Windows.Forms.TextBox();
+            this.textBoxMobile = new System.Windows.Forms.TextBox();
+            this.textBoxPassword = new System.Windows.Forms.TextBox();
+            this.textBoxLogin = new System.Windows.Forms.TextBox();
             this.labelSurname = new System.Windows.Forms.Label();
             this.labelAdres = new System.Windows.Forms.Label();
             this.labelPhone = new System.Windows.Forms.Label();
@@ -47,6 +47,8 @@
             this.checkBoxCompanyAccount = new System.Windows.Forms.CheckBox();
             this.textBoxBranch = new System.Windows.Forms.TextBox();
             this.labelBranch = new System.Windows.Forms.Label();
+            this.textBoxPesel = new System.Windows.Forms.TextBox();
+            this.labelPesel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelName
@@ -58,54 +60,54 @@
             this.labelName.TabIndex = 0;
             this.labelName.Text = "Imię";
             // 
-            // textBox1
+            // textBoxName
             // 
-            this.textBox1.Location = new System.Drawing.Point(30, 22);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 1;
+            this.textBoxName.Location = new System.Drawing.Point(30, 22);
+            this.textBoxName.Name = "textBoxName";
+            this.textBoxName.Size = new System.Drawing.Size(100, 22);
+            this.textBoxName.TabIndex = 1;
             // 
-            // textBox2
+            // textBoxSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(30, 64);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 22);
-            this.textBox2.TabIndex = 2;
+            this.textBoxSurname.Location = new System.Drawing.Point(30, 64);
+            this.textBoxSurname.Name = "textBoxSurname";
+            this.textBoxSurname.Size = new System.Drawing.Size(100, 22);
+            this.textBoxSurname.TabIndex = 2;
             // 
-            // textBox3
+            // textBoxAddress
             // 
-            this.textBox3.Location = new System.Drawing.Point(30, 116);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 22);
-            this.textBox3.TabIndex = 3;
+            this.textBoxAddress.Location = new System.Drawing.Point(30, 116);
+            this.textBoxAddress.Name = "textBoxAddress";
+            this.textBoxAddress.Size = new System.Drawing.Size(100, 22);
+            this.textBoxAddress.TabIndex = 3;
             // 
-            // textBox4
+            // textBoxTel
             // 
-            this.textBox4.Location = new System.Drawing.Point(30, 161);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 22);
-            this.textBox4.TabIndex = 4;
+            this.textBoxTel.Location = new System.Drawing.Point(30, 161);
+            this.textBoxTel.Name = "textBoxTel";
+            this.textBoxTel.Size = new System.Drawing.Size(100, 22);
+            this.textBoxTel.TabIndex = 4;
             // 
-            // textBox5
+            // textBoxMobile
             // 
-            this.textBox5.Location = new System.Drawing.Point(30, 214);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(100, 22);
-            this.textBox5.TabIndex = 5;
+            this.textBoxMobile.Location = new System.Drawing.Point(30, 214);
+            this.textBoxMobile.Name = "textBoxMobile";
+            this.textBoxMobile.Size = new System.Drawing.Size(100, 22);
+            this.textBoxMobile.TabIndex = 5;
             // 
-            // textBox6
+            // textBoxPassword
             // 
-            this.textBox6.Location = new System.Drawing.Point(30, 265);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(100, 22);
-            this.textBox6.TabIndex = 6;
+            this.textBoxPassword.Location = new System.Drawing.Point(30, 265);
+            this.textBoxPassword.Name = "textBoxPassword";
+            this.textBoxPassword.Size = new System.Drawing.Size(100, 22);
+            this.textBoxPassword.TabIndex = 6;
             // 
-            // textBox7
+            // textBoxLogin
             // 
-            this.textBox7.Location = new System.Drawing.Point(30, 319);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 22);
-            this.textBox7.TabIndex = 7;
+            this.textBoxLogin.Location = new System.Drawing.Point(30, 319);
+            this.textBoxLogin.Name = "textBoxLogin";
+            this.textBoxLogin.Size = new System.Drawing.Size(100, 22);
+            this.textBoxLogin.TabIndex = 7;
             // 
             // labelSurname
             // 
@@ -207,11 +209,29 @@
             this.labelBranch.TabIndex = 19;
             this.labelBranch.Text = "Oddział";
             // 
+            // textBoxPesel
+            // 
+            this.textBoxPesel.Location = new System.Drawing.Point(302, 64);
+            this.textBoxPesel.Name = "textBoxPesel";
+            this.textBoxPesel.Size = new System.Drawing.Size(100, 22);
+            this.textBoxPesel.TabIndex = 20;
+            // 
+            // labelPesel
+            // 
+            this.labelPesel.AutoSize = true;
+            this.labelPesel.Location = new System.Drawing.Point(451, 69);
+            this.labelPesel.Name = "labelPesel";
+            this.labelPesel.Size = new System.Drawing.Size(52, 17);
+            this.labelPesel.TabIndex = 21;
+            this.labelPesel.Text = "PESEL";
+            // 
             // CreateCont
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(541, 417);
+            this.Controls.Add(this.labelPesel);
+            this.Controls.Add(this.textBoxPesel);
             this.Controls.Add(this.labelBranch);
             this.Controls.Add(this.textBoxBranch);
             this.Controls.Add(this.checkBoxCompanyAccount);
@@ -223,13 +243,13 @@
             this.Controls.Add(this.labelPhone);
             this.Controls.Add(this.labelAdres);
             this.Controls.Add(this.labelSurname);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox6);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxLogin);
+            this.Controls.Add(this.textBoxPassword);
+            this.Controls.Add(this.textBoxMobile);
+            this.Controls.Add(this.textBoxTel);
+            this.Controls.Add(this.textBoxAddress);
+            this.Controls.Add(this.textBoxSurname);
+            this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.labelName);
             this.Name = "CreateCont";
             this.Text = "CreateCont";
@@ -241,13 +261,13 @@
         #endregion
 
         private System.Windows.Forms.Label labelName;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox textBoxName;
+        private System.Windows.Forms.TextBox textBoxSurname;
+        private System.Windows.Forms.TextBox textBoxAddress;
+        private System.Windows.Forms.TextBox textBoxTel;
+        private System.Windows.Forms.TextBox textBoxMobile;
+        private System.Windows.Forms.TextBox textBoxPassword;
+        private System.Windows.Forms.TextBox textBoxLogin;
         private System.Windows.Forms.Label labelSurname;
         private System.Windows.Forms.Label labelAdres;
         private System.Windows.Forms.Label labelPhone;
@@ -259,5 +279,7 @@
         private System.Windows.Forms.CheckBox checkBoxCompanyAccount;
         private System.Windows.Forms.TextBox textBoxBranch;
         private System.Windows.Forms.Label labelBranch;
+        private System.Windows.Forms.TextBox textBoxPesel;
+        private System.Windows.Forms.Label labelPesel;
     }
 }

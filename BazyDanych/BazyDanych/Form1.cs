@@ -56,8 +56,8 @@ namespace BazyDanych
             {
                 MessageBox.Show("Spróbuj później", "Error");
             }
-            try
-            {
+            ///try
+//{
                 string query;
                 if (checkBoxEmployees.Checked)
                 {
@@ -115,10 +115,10 @@ namespace BazyDanych
                 }
 
                
-            }catch(Exception exs)
-            {
-
-            }
+            //}catch(Exception exs)
+            //{
+          //      MessageBox.Show("Błąd");
+          //  }
             
             }
     }
